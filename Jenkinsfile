@@ -10,9 +10,7 @@ pipeline{
         maven 'maven-3.9.1' 
        
     }
-    agent {
-        label 'master'
-        }
+    agent any
         stages{
             stage('Initialize workspace') {
         steps {
